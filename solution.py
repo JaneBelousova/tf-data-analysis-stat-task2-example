@@ -12,4 +12,4 @@ def solution(p: float, x: np.array) -> tuple:
     # Не меняйте название функции и её аргументы
     df = 1
     alpha = 1 - p
-    return (np.sqrt((x.mean()**2 ) / chi2.ppf(1 - alpha / 2, df)) / 47), (np.sqrt((x.mean()**2 ) / chi2.ppf(alpha / 2, df)) / 47)
+    return (np.sqrt((x.mean()**2 ) / chi2.ppf(1 - alpha / 2, df) / 47)), (np.sqrt((x.mean()**2 ) / chi2.ppf(alpha / 2, df) / 47))
